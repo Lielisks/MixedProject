@@ -1,0 +1,1076 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#007991, #78ffd6);
+}
+
+header
+{
+    position:fixed;
+    top:0;
+    left: 0;
+    height: 80px;
+    padding:20px 100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+
+}
+.container #logo-content
+{
+    position: absolute;
+    right:0;
+    top:0; 
+}
+
+.container 
+{
+    display:flex;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.container h1
+{
+    font-size: 24px;
+    position: absolute;
+    left: 5%;
+    top: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color:#fff;
+}
+.container h2
+{
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1em;
+    position: relative;
+    cursor: pointer;
+    color:#fff;
+    top:32.5px;
+    right: 65px;
+}
+
+.count 
+{
+    position:absolute;
+    margin: 10px 20px;
+}
+.count .btn
+{
+    padding: 8px 16px;
+    text-align: left;
+    width: 120px;
+    height: 30px;
+    position: relative; 
+    border:none;
+    outline:none;
+    cursor:pointer;  
+    border-radius: 6px;
+    left: -10px;
+    top: 0px;  
+}
+.count .subtract 
+{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    left: -36px;
+    bottom: -7px;
+}
+#sonuc 
+{
+     position:relative;
+     width: 25px;
+     height: 25px;
+     border:none;
+     outline:none;
+     cursor:pointer;
+     font-size: 14px;  
+     border-radius: 50%;
+     color:#fff;
+     background: #e35d5b;
+     right: 90px;
+     bottom: 5px;
+}
+
+
+.logo
+{
+    position:absolute;  
+    right: 120px;
+    top: 8px;
+
+}
+.logo img 
+{
+    width: 55px;
+    height: 55px;
+}
+#header .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav 
+{
+    position: relative;
+    left: 60%;
+    top: 10px;
+}
+.main-nav .login
+{
+    position: absolute;
+    left:6%;
+    bottom: -10px;
+}
+.main-nav .login img
+{
+    width: 25px;
+    height: 25px;
+}
+.main-nav .register
+{
+    position: absolute;
+    right: 218px;
+    bottom: -10px;
+}
+.main-nav .register img
+{
+    width: 25px;
+    height: 25px;
+}
+.main-nav .favor
+{
+    position:absolute;
+    right: 95px;
+    bottom: -8px;
+
+}
+.main-nav .favor img
+{
+    width: 25px;
+    height: 25px;
+}
+.main-nav ul 
+{
+    margin:0;
+    padding:0; 
+}
+.main-nav ul li 
+{
+    float:left;
+    padding-left: 40px;
+}
+
+.main-nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+.main-nav ul li a:hover
+{  
+    text-decoration: underline; 
+}
+
+
+
+/* BOX BÖLÜMLERİ */
+
+
+
+/* 1.KUTU */
+.box1
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    top: 15%;
+    left: 25px;
+}
+.box1 .image img
+{
+    width: 335px;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;    
+}
+.box1 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 65px;
+    top: 15px;
+    border-radius: 6px;
+    padding: 6px 12px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box1:hover .title h2
+{
+    opacity: 1;
+}
+.text 
+{
+    position: absolute;
+    top: 75%;
+    left: 20px;
+    border-bottom: #121212; 
+}
+.text h3
+{
+    font-weight: 600;
+    font-size: 0.95em;
+    display:flex;
+    display:inline-block;
+    color:#ffa812;
+    padding-top: 20px;
+    position: relative;
+    cursor: pointer;
+    bottom: 15px;
+    right: 10px;
+    text-transform: uppercase;
+}
+#sayi 
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.btnHesap
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    bottom: 10px;
+    right: 6px;
+    background:#3498db;
+    color:#fff;    
+}
+
+#fiyat
+{
+    color:#121212;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+
+.box1 .icon1
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 6px;
+}
+
+/* 2. KUTU*/
+.box2
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    bottom: 24.5%;    
+    left: 26.5%;
+}
+
+.box2 .image img
+{
+    width: 335px;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;    
+}
+.box2 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 75px;
+    top: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box2:hover .title h2
+{
+    opacity: 1;
+}
+
+#sayi2 
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.btnHesap2
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    bottom: 10px;
+    right: 6px;
+    background:#3498db;
+    color:#fff;    
+}
+
+#fiyat2
+{
+    color:#121212;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+.box2 .icon2
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    top: 6px;
+}
+
+
+/* 3.KUTU */
+
+.box3
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    bottom: 483px;    
+    left: 51.25%;
+}
+
+.box3 .image img
+{
+    width: 335px;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;    
+}
+
+.box3 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 85px;
+    top: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box3:hover:hover .title h2
+{
+    opacity: 1;
+}
+#sayi3 
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.btnHesap3
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    bottom: 10px;
+    right: 6px;
+    background:#3498db;
+    color:#fff;    
+}
+
+#fiyat3
+{
+    color:#121212;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+.box3 .icon3
+{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 5px;
+    top: 6px;
+}
+
+/* 4.KUTU */
+
+
+.box4
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    bottom: 782px;    
+    left: 76%;
+}
+
+.box4 .image img
+{
+    width: 335px;
+    height:300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;    
+}
+.box4 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 95px;
+    top: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box4:hover:hover .title h2
+{
+    opacity: 1;
+}
+#sayi4
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.btnHesap4
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    bottom: 10px;
+    right: 6px;
+    background:#3498db;
+    color:#fff;    
+}
+
+#fiyat4
+{
+    color:#121212;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+.box4 .icon4
+{
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    top: 6px;
+}
+
+/* 5.KUTU */
+
+.box5
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    bottom: 725px;
+    left: 25px;
+}
+
+.box5 .image img
+{
+    width: 335px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.box5 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 75px;
+    top: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box5:hover:hover .title h2
+{
+    opacity: 1;
+}
+.box5 h3
+{
+    font-weight: 600;
+    font-size: 0.95em;
+    display:flex;
+    display:inline-block;
+    color:#ffa812;
+    padding-top: 20px;
+    position: relative;
+    top: -15px;
+    right: 10px;
+    text-transform: uppercase;
+}
+
+#sayi5
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.btnHesap5
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    right: 10px;
+    top: -10px;
+    background:#3498db;
+    color:#fff;    
+}
+#fiyat5
+{
+    color:#fff;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+.box5 .icon5
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
+}
+
+/* 6. KUTU */
+
+.box6
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    left: 26.5%;
+    bottom: 136%;
+}
+
+.box6 .image img
+{
+    width: 335px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.box6 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 110px;
+    top: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box6:hover:hover .title h2
+{
+    opacity: 1;
+}
+.box6 h3
+{
+    font-weight: 600;
+    font-size: 0.95em;
+    display:flex;
+    display:inline-block;
+    color:#ffa812;
+    padding-top: 20px;
+    position: relative;
+    top: -15px;
+    right: 10px;
+    text-transform: uppercase;
+}
+#sayi6
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.btnHesap6
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    right: 10px;
+    top: -10px;
+    background:#3498db;
+    color:#fff;    
+}
+#fiyat6
+{
+    color:#fff;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+.box6 .icon6
+{
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
+}
+
+/* 7. KUTU  */
+
+.box7
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    left: 51.5%;
+    bottom: 1325px;
+}
+
+.box7 .image img
+{
+    width: 335px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.box7 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 95px;
+    top: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box7:hover:hover .title h2
+{
+    opacity: 1;
+}
+.box7 h3
+{
+    font-weight: 600;
+    font-size: 0.95em;
+    display:flex;
+    display:inline-block;
+    color:#ffa812;
+    padding-top: 20px;
+    position: relative;
+    top: -15px;
+    right: 10px;
+    text-transform: uppercase;
+}
+#sayi7
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.btnHesap7
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    right: 10px;
+    top: -10px;
+    background:#3498db;
+    color:#fff;    
+}
+#fiyat7
+{
+    color:#fff;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+.box7 .icon7
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 10px;
+}
+
+/* 8. KUTU */
+.box8
+{
+    position: relative;
+    width: 335px;
+    height: 300px;
+    background: #fff;
+    border-radius: 10px;
+    display:flex;
+    left: 76%;
+    top: -1625px;
+}
+
+.box8 .image img
+{
+    width: 335px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.box8 .title h2
+{
+    font-size: 0.9em;
+    font-weight: 500;
+    position: absolute;
+    right: 65px;
+    top: 15px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background:#FF6B6B;
+    color:#fff;
+    transition: 0.5s;
+    opacity: 0;
+}
+.box8:hover:hover .title h2
+{
+    opacity: 1;
+}
+.box8 h3
+{
+    font-weight: 600;
+    font-size: 0.95em;
+    display:flex;
+    display:inline-block;
+    color:#ffa812;
+    padding-top: 20px;
+    position: relative;
+    top: -15px;
+    right: 10px;
+    text-transform: uppercase;
+}
+#sayi8
+{
+    border:none;
+    width: 150px;
+    position: relative;
+    bottom: 5px;
+    outline:none;
+    padding: 10px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.btnHesap8
+{
+    display:block;
+    position: relative;  
+    padding: 8px 16px;
+    width: 110px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius: 10px; 
+    right: 10px;
+    top: -10px;
+    background:#3498db;
+    color:#fff;    
+}
+#fiyat8
+{
+    color:#fff;
+    position: relative;
+    font-size: 14px;
+    bottom:32px;
+    left: 155px;
+}
+.box8 .icon8
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 10px;
+}
+
+@media (max-width: 700px)
+{
+     
+
+    .container 
+{
+    position: relative;
+    display:flex;
+}
+    .box1
+    {
+        left:20%;
+    }
+    .box2
+   {
+        top: 135px;
+        left: 20%;
+   }
+
+   .box3
+   {
+        top:165px;
+        left: 20%;
+   }
+
+   .box4
+   {
+        top: 192px;
+        left: 20%;
+   }
+ 
+   .box5
+   {
+        top: 220px;
+        left: 20%;
+   }
+
+   .box6
+   {
+        top: 250px;
+        left: 20%;
+   }
+
+   .box7
+   {
+        top: 280px;
+        left: 20%;
+   }
+
+   .box8
+   {
+        top: 310px;
+        left: 20%;
+   }
+   .container h1
+   {
+     opacity: 0;
+   }
+   .main-nav .enter
+   { 
+
+    position: absolute;
+    left: -180px;
+    bottom: -30px;
+    font-size: 16px;
+   }  
+   
+   .main-nav .login img
+   {
+    position: absolute;
+    left: -150px;
+    bottom: -40px;
+   }
+   .main-nav .regis
+   {
+    position: absolute;
+    font-size: 16px;
+    left: -80px;
+    bottom :-30px;
+   }
+
+   .main-nav .register img
+   {
+      position: absolute;
+      left:55px;
+      bottom: -40px;
+   }
+
+   .main-nav .fav
+   {
+    position: absolute;
+    font-size: 16px;
+    left:10px;
+    bottom: -30px;
+   }
+
+   .main-nav .favor img
+   {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+   }
+   .container h2
+   {
+    position:absolute;
+    top: 15px;
+    left:70px;
+
+   }
+   .container .logo img
+   {
+    position:absolute;
+    left: 110px;
+    top: -20px;
+   }
+   .container #sonuc
+   {
+    position: absolute;
+    left: 25px;
+    top: -5px;
+   }
+              
+}

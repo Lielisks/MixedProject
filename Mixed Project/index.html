@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework</title>
+</head>
+<body>
+
+
+    <header id="header">
+        <div class="container">
+            <div id="logo-content">
+                <a href="#" class="logo"><img src="HeaderImages/cart.png"></a>
+                <h2>Sepetim</h2>
+                <input type="button" id="sonuc" value="0">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="enter">Giriş Yap</a></li>
+                    <a href="#" class="login"><img src="HeaderImages/enter.png"></a>
+
+                    <li><a href="#" class="regis">Kayıt Ol</a></li>
+                    <a href="#" class="register"><img src="HeaderImages/sign-up.png"></a>
+
+                    <li><a href="#" class="fav">Favorilerim</a></li>
+                    <a href="#" class="favor"><img src="HeaderImages/heart.png"></a>
+                </ul>
+            </nav>
+            <h1>Enjoy Your Shopping</h1>
+        </div>
+    </header>
+
+      <!--1.KUTU-->
+  <div class="box1"> 
+    <div class="image">
+    <img src="BoxImages/ayakkabı.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3>Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi">
+        <input type="button" class="btnHesap" value="Hesapla">
+        <div id="fiyat"></div>
+    </div>
+    <div class="title">
+        <h2>Sneaker Ayakkabı</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/sneakers.png" class="icon1"></a>
+    </div>
+
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+<!--2. KUTU-->
+<div class="box2">
+    <div class="image">
+    <img src="BoxImages/canta.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3>Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi2">
+        <input type="button" class="btnHesap2" value="Hesapla">
+        <div id="fiyat2"></div>
+    </div>
+    <div class="title">
+        <h2>Çalışma Çantası</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/bag.png" class="icon2"></a>
+    </div>
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+ <!--3. KUTU -->
+<div class="box3">
+    <div class="image">
+    <img src="BoxImages/havlu.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3>Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi3">
+        <input type="button" class="btnHesap3" value="Hesapla">
+        <div id="fiyat3"></div>
+    </div>
+    <div class="title">
+        <h2>İpekten Havlu</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/towel.png" class="icon3"></a>
+    </div>
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+<!-- 4.KUTU -->
+<div class="box4">
+    <div class="image">
+    <img src="BoxImages/masa.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3>Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi4">
+        <input type="button" class="btnHesap4" value="Hesapla">
+        <div id="fiyat4"></div>
+    </div>
+    <div class="title">
+        <h2>Ahşap Masa</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/table.png" class="icon4"></a>
+    </div>
+    
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+<!--5. KUTU -->
+<div class="box5">
+    <div class="image">
+    <img src="BoxImages/makine.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3 class="title2">Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi5">
+        <input type="button" class="btnHesap5" value="Hesapla">
+        <div id="fiyat5"></div>
+    </div>
+    <div class="title">
+        <h2>Kahve Makinesi</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/coffee-maker.png" class="icon5"></a>
+    </div>
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+<!--6. KUTU-->
+<div class="box6">
+    <div class="image">
+    <img src="BoxImages/sandalye.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3 class="title2">Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi6">
+        <input type="button" class="btnHesap6" value="Hesapla">
+        <div id="fiyat6"></div>
+    </div>
+    <div class="title">
+        <h2>Sandalye</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/chair.png" class="icon6"></a>
+    </div>
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+<!-- 7. KUTU -->
+<div class="box7">
+    <div class="image">
+    <img src="BoxImages/Raket.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3 class="title2">Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi7">
+        <input type="button" class="btnHesap7" value="Hesapla">
+        <div id="fiyat7"></div>
+    </div>
+    <div class="title">
+        <h2>Tenis Raketi</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/ball.png" class="icon7"></a>
+    </div>
+    
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+<!-- 8. KUTU -->
+<div class="box8">
+    <div class="image">
+    <img src="BoxImages/headphone.jpg" onclick="image()">
+    </div>
+    <div class="text">
+        <h3 class="title2">Alış Fiyatını Girin:</h3>
+        <input type="text" id="sayi8">
+        <input type="button" class="btnHesap8" value="Hesapla">
+        <div id="fiyat8"></div>
+    </div>
+    <div class="title">
+        <h2>Kulaküstü Kulaklık</h2>
+    </div>
+    <div class="icon">
+        <a href="#"><img src="İcons/headphones.png" class="icon8"></a>
+    </div>
+    
+    <div class="count">
+        <input type="button" class="btn" onclick="azalt()" value="Sepetten Çıkar">
+        <a href="#"><img src="İcons/minus.png" onclick="azalt()" class="subtract"></a>
+    </div>
+</div>
+     
+      <section class="box" id="home">
+
+     </section>
+   
+    <script src="java.js"></script>
+</body>
+</html>
